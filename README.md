@@ -1,0 +1,1 @@
+This repository aims to provide solutions and educational resources for handling personal data securely in backend applications.
