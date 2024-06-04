@@ -4,5 +4,5 @@ Python module for Basic Authentication
 """
 
 
-class BasicAuth():
+class BasicAuth(Auth):
     pass
