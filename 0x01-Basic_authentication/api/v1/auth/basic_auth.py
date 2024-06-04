@@ -3,7 +3,7 @@
 Python module for Basic Authentication
 """
 
-import base64
+from base64 import b64decode
 from api.v1.auth.auth import Auth
 
 
@@ -33,6 +33,6 @@ class BasicAuth(Auth):
         if type(base64_authorization_header) != str:
             return None
         try:
-            return base64.b64decode(base64_authorization_header).decode('utf-8')
+            return b64decode(base64_authorization_header).decode('utf-8')
         except Exception:
             return None
