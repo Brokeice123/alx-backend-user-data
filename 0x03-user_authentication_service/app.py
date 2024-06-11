@@ -21,7 +21,7 @@ def users():
     """Register a new user."""
     email = request.form.get("email")
     password = request.form.get("password")
-    
+
     if not email or not password:
         return jsonify({"message": "Email and password are required"}), 400
 
