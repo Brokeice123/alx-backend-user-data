@@ -53,7 +53,7 @@ class DB:
             return user
         except InvalidRequestError:
             raise
-    
+
     def update_user(self, user_id: int, **kwargs) -> None:
         """
         Update a user by the given criteria
